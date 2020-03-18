@@ -1,0 +1,21 @@
+header
+{
+    background: rgba(0, 0, 0, 0.8);
+}
+a
+{
+    text-decoration: none;
+    text-shadow: 1.5px 2px 4px white;
+}
+a:hover
+{
+    text-shadow: none;
+}
+h1
+{
+    padding: 15px 0;
+    margin: 0;
+    font-family: 'Trade Winds' ;
+    letter-spacing: 4px;
+    color: white;
+}

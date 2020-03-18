@@ -1,0 +1,70 @@
+<div class="container">
+    
+    <div class="heading">
+        <h2>Edit {{eCust.fname | uppercase}} {{eCust.lname | uppercase}}'s Details:</h2>
+    </div>
+
+    <div class="editcust-form">
+        <form class="row form-group" #editForm="ngForm" (ngSubmit)="onSubmit(custId, eCust)">
+            <div class="col-3">
+                <label class="field-label">Customer-Id :</label>
+            </div>
+            <div class="col-9">
+                <input class="form-control field-text" type="text" autocomplete="off" required [(ngModel)]="eCust.id" name="id"
+                #id="ngModel" disabled>
+            </div>
+
+            <div class="col-3">
+                <label class="field-label">First Name :</label>
+            </div>
+            <div class="col-9">
+                <input class="form-control field-text" type="text" placeholder="Enter first name" autocomplete="off" required [(ngModel)]="eCust.fname" name="fname"
+                #fname="ngModel">
+            </div>
+            
+            <div class="col-3">
+                <label class="field-label">Last Name :</label>
+            </div>
+            <div class="col-9">
+                <input class="form-control field-text" type="text" placeholder="Enter last name" autocomplete="off" required [(ngModel)]="eCust.lname" name="lname"
+                #lname="ngModel">
+            </div>
+
+            <div class="col-3">
+                <label class="field-label">Designation :</label>
+            </div>
+            <div class="col-9">
+                <input class="form-control field-text" type="text" placeholder="Enter your designation" autocomplete="off" required [(ngModel)]="eCust.designation" name="designation"
+                #designation="ngModel">
+            </div>
+
+            <div class="col-3">
+                <label class="field-label">E-mail :</label>
+            </div>
+            <div class="col-9">
+                <input class="form-control field-text" type="email" placeholder="Enter your E-mail" autocomplete="off" required [(ngModel)]="eCust.email" name="email"
+                #email="ngModel">
+            </div>
+
+            <div class="col-3">
+                <label class="field-label">Mobile No. :</label>
+            </div>
+            <div class="col-9">
+                <input class="form-control field-text" type="number" placeholder="Enter Mobile No." autocomplete="off" required [(ngModel)]="eCust.mobileno" name="mobileno"
+                #mobileno="ngModel">
+            </div>
+
+            <div class="col-3">
+                <label class="field-label">Address :</label>
+            </div>
+            <div class="col-9">
+                <input class="form-control field-text" type="text" placeholder="Enter your Address" autocomplete="off" required [(ngModel)]="eCust.address" name="address"
+                #address="ngModel">
+            </div>
+
+            <button class="btn submit-btn" [disabled]="!editForm.form.valid">Submit</button>
+
+        </form>
+    </div>
+    
+</div>

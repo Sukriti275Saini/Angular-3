@@ -1,0 +1,56 @@
+a
+{
+    text-decoration: none;
+}
+h2
+{
+    font-family: 'Yeon Sung' ;
+    color: white;
+    text-shadow: -2px 2px 2px black;
+    font-size: 35px;
+    line-height: 60px;
+    margin-top: 90px;
+}
+.all-customers
+{ 
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+ul
+{
+    list-style-type: circle;
+    color: white;
+}
+h5
+{
+    color: white;
+    padding: 10px 0;
+}
+h5:hover
+{
+    color: rgb(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+.add-customer
+{
+    text-align: center;
+    margin-top: 40px;
+}
+.add-btn
+{
+    background: black;
+    color: white;
+    border-radius: 12px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 4px black;
+    padding: 8px 30px;
+}
+.add-btn:hover
+{
+    background: white;
+    color: black;
+    border-radius: 12px;
+    border: 2px solid black;
+    font-weight: 600;
+}

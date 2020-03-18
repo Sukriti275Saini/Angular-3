@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="cust-details" *ngIf='selectedCust'>
+        <h2>Details of {{selectedCust.fname}} {{selectedCust.lname}}:</h2>
+        <h5>Customer-Id: {{selectedCust.id}}</h5>
+        <h5>Designation: {{selectedCust.designation}}</h5>
+        <h5>E-mail: {{selectedCust.email}}</h5>
+        <h5>Mobile No.: {{selectedCust.mobileno}}</h5>
+        <h5>Address: {{selectedCust.address}}</h5>
+
+        <div class="row buttons">
+            <div class="col-6">
+                <a [routerLink]="['edit-profile',custId]">
+                    <button class="btn edit-btn">Edit</button>
+                </a>
+            </div>
+            <div class="col-6">
+                <button class="btn delete-btn" (click)="delcust(custId)">Delete</button>
+            </div> 
+        </div>
+
+    </div>   
+</div>

@@ -1,0 +1,40 @@
+.cust-details
+{
+    margin-top: 160px;
+    background: rgba(78, 25, 25, 0.6);
+    border-radius: 10px;
+    padding: 20px 40px;
+    color: rgb(236, 236, 236);
+}
+.buttons
+{
+    margin-top: 40px;
+}
+.edit-btn
+{
+    background: rgb(66, 41, 33);
+    border-radius: 8px;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 1px 3px 4px black;
+    padding: 8px 30px;
+}
+.edit-btn:hover
+{
+    box-shadow: none;
+    background: rgba(49, 17, 6, 0.596);
+}
+.delete-btn
+{
+    background: rgb(175, 0, 0);
+    border-radius: 8px;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 2px 3px 4px black;
+    padding: 8px 30px;
+}
+.delete-btn:hover
+{
+    box-shadow: none;
+    background: rgba(175, 0, 0, 0.582);
+}

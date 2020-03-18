@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-6">
+            <h2>Customers List</h2>
+            <div class="all-customers">
+                <ul *ngFor="let customer of customers; index as customerId" >
+                    <li>
+                        <h5 (click)="show(customer)">{{customer.fname |uppercase}} {{customer.lname |uppercase}}</h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="add-customer">
+                <a [routerLink]="['/newcustomer']"class="btn add-btn">Add a New Customer
+                </a>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="one-customer">
+                <app-customer-details [selectedCust] = 'selectedCustomer' [custId]='custId' ></app-customer-details>
+            </div>
+        </div>
+
+    </div>
+</div>

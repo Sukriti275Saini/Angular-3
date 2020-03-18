@@ -1,0 +1,65 @@
+.heading
+{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2
+{
+    font-family: 'Yeon Sung' ;
+    color: white;
+    text-shadow: -2px 2px 2px black;
+    font-size: 35px;
+    line-height: 60px;
+}
+.addcust-form
+{
+    width: 70%;
+    margin: auto;
+    padding: 40px 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+.field-label
+{
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+.field-text
+{
+    width: 100%;
+    color: black;
+    font-size: 15px;
+    border: none;
+    background: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+.submit-btn
+{
+    margin: auto;
+    background: black;
+    padding: 10px 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 2px 1px 4px white;
+}
+.submit-btn:hover
+{
+    background: white;
+    color: black;
+    font-weight: 600;
+    border: 1px solid white;
+    box-shadow: none;
+}
+h5
+{
+    color: white;
+    font-size: 20px;
+}
